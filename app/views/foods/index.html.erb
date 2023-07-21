@@ -1,0 +1,11 @@
+<h1>Foods List with <%= @food.first.description %></h1>
+
+
+<h3></h3>
+
+<% @food.each do |f| %>
+  <p>gtinUpc Code: <%= f.code %></p>
+  <p>Food description: <%= f.description %></p>
+  <p>Owner: <%= f.owner %></p>
+  <p>Ingredients: <%= f.ingredients %></p>
+<% end %>
